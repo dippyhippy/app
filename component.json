@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "description": "The best project ever.",
+  "author": "Ben Major <ben@godalming.it>",
+  "repo": "ben/app",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "noflo/noflo": "*"
+  },
+  "remotes": [
+    "https://raw.githubusercontent.com"
+  ],
+  "scripts": [
+    "index.js",
+    "components/DoSomething.coffee"
+  ],
+  "json": [
+    "component.json"
+  ],
+  "noflo": {
+    "components": {
+      "DoSomething": "components/DoSomething.coffee"
+    }
+  }
+}
