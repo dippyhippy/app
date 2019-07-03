@@ -17,10 +17,13 @@
     }
   ],
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "noflo": "~0.5.0"
+    "noflo": "~0.5.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -40,5 +43,6 @@
     "components": {
       "DoSomething": "components/DoSomething.coffee"
     }
-  }
+  },
+  "snyk": true
 }
